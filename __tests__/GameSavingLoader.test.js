@@ -8,7 +8,3 @@ test('should return the same string', () => {
     expect(value).toBe(initialData);
   });
 });
-
-test('mocking rejection of readGameSaving()', () => {
-  // ToDo
-});
