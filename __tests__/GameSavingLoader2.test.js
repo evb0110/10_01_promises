@@ -10,5 +10,5 @@ let e;
 test("mocking rejection of readGameSaving()", () => {
   readGameSaving.mockRejectedValue("ERROR");
 
-  return GameSavingLoader.load().catch(err => expect(err).toBe('Error: ERROR'));
+  return GameSavingLoader.load().catch(err => expect(String(err)).toMatch('ERROR'));
 });
